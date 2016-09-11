@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns = "http://wwww.w3.org/ns/widgets"
+id = "com.hostaldelpozo" version = "1.0.0">
+
+<name>Hotel Hostal del Pozo</name>
+
+<description>
+Hotel en Querétaro, Querétaro
+</description>
+
+<autor href="http://unaweb.net" email="webmaster@unaweb.net">
+Carlos Palacios Macedo
+</autor>
+
+ <hook type="after_plugin_install" src="scripts/install_plugins.js" />
+
+ <icon src="icon.png" />
+   
+  <platform name="android">
+    <preference name="Fullscreen" value="true" />
+	<preference name="orientation" value="portrait" />
+	<splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
+    <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
+    <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
+    <splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>
+  </platform>
+  
+    <platform name="ios">
+    <preference name="Fullscreen" value="true" />
+		<preference name="orientation" value="portrait" />
+  </platform>
+  
+      <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+	  <preference name="DisallowOverscroll" value="true"/>
+	  <preference name="phonegap-version" value="cli-6.3.0" />
+	  
+	  <preference name="SplashScreenDelay" value="3000" />
+<preference name="SplashMaintainAspectRatio" value="true | false" />
+<preference name="SplashShowOnlyFirstTime" value="true | false" />
+	  
+	  
+	<plugin name="cordova-plugin-device" />
+    <plugin name="cordova-plugin-device-motion" />
+    <plugin name="cordova-plugin-device-orientation" />
+    <plugin name="cordova-plugin-geolocation" />
+		
+	<access origin="*" />
+		
+
+	
+	<plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+
+
+   <!--
+        Define a specific version of PhoneGap to build into your app.
+        <preference name="phonegap-version"       value="3.5.0" />
+		
+    -->
+	
+</widget>	
