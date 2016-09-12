@@ -5,7 +5,7 @@ id = "com.hostaldelpozo" version = "1.0.0">
 <name>Hotel Hostal del Pozo</name>
 
 <description>
-Hotel en Querétaro, Querétaro
+Hotel Económico para trabajadores de empresas en Querétaro, Querétaro
 </description>
 
 <autor href="http://unaweb.net" email="webmaster@unaweb.net">
@@ -17,8 +17,8 @@ Carlos Palacios Macedo
  <icon src="icon.png" />
    
   <platform name="android">
-    <preference name="Fullscreen" value="true" />
-	<preference name="orientation" value="portrait" />
+    <preference name="Fullscreen" value="false" />
+	<preference name="orientation" value="default" />
 	<splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
     <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
     <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
@@ -26,8 +26,8 @@ Carlos Palacios Macedo
   </platform>
   
     <platform name="ios">
-    <preference name="Fullscreen" value="true" />
-		<preference name="orientation" value="portrait" />
+    <preference name="Fullscreen" value="false" />
+		<preference name="orientation" value="default" />
   </platform>
   
       <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
