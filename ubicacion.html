@@ -1,6 +1,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="blue">
+	<meta http-equiv="cleartype" content="on">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
    	<title>Hotel Hostal del Pozo en Querétaro</title>
@@ -10,6 +16,10 @@
     
 	<script src="http://maps.googleapis.com/maps/api/js?sensor=true"
     ></script>
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <!-- Scripts Jquery Mobile -->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script> 
 	 /*
  * Google Maps documentation: 
@@ -86,35 +96,8 @@ $.mobile.loader.prototype.options.textVisible,
 	<link rel="stylesheet" href="themes/jqm.slidemenu.css" />
 	<script src="js/jqm.slidemenu.js"></script>
     <!--JQM hostal-->
-	
-	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-    <!-- Scripts Jquery Mobile -->
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <!-- Scripts Google maps -->
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> 
-    <script type="text/javascript" src="js/phonegap.js"></script> 
-    <!-- Script loading --> 
-<script>
-$( document ).on( "click", ".show-page-loading-msg", function() {
-    var $this = $( this ),
-        theme = $this.jqmData( "theme" ) || $.mobile.loader.prototype.options.theme,
-        msgText = $this.jqmData( "msgtext" ) || $.mobile.loader.prototype.options.text,
-        textVisible = $this.jqmData( "textvisible" ) || $.mobile.loader.prototype.options.textVisible,
-        textonly = !!$this.jqmData( "textonly" );
-        html = $this.jqmData( "html" ) || "";
-    $.mobile.loading( "show", {
-            text: msgText,
-            textVisible: textVisible,
-            theme: theme,
-            textonly: textonly,
-            html: html
-    });
-})
-.on( "click", ".hide-page-loading-msg", function() {
-    $.mobile.loading( "hide" );
-});
-</script>
+
+
 <style>
 #map-page, #map-canvas { 
 width: 100%; height: 90%; padding: 0; padding-top:40px !important;
