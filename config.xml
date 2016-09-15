@@ -12,10 +12,12 @@ Hotel Económico para trabajadores de empresas en Querétaro, Querétaro
 Carlos Palacios Macedo
 </autor>
 
+<!-- Comando para instalar plugins -->
  <hook type="after_plugin_install" src="scripts/install_plugins.js" />
 
  <icon src="icon.png" />
-   
+ 
+ <!-- Códigos para cargar pantallas splash screen -->  
   <platform name="android">
     <preference name="Fullscreen" value="false" />
 	<preference name="orientation" value="default" />
@@ -42,7 +44,7 @@ Carlos Palacios Macedo
 	<plugin name="cordova-plugin-device" />
     <plugin name="cordova-plugin-device-motion" />
     <plugin name="cordova-plugin-device-orientation" />
-    <plugin name="cordova-plugin-geolocation" />
+    <plugin name="org.apache.cordova.geolocation" spec="0.3.6" source="pgb" />
 		
 	<access origin="*" />
 		

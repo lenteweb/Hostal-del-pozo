@@ -9,7 +9,7 @@ var pluginlist = [
     "org.apache.cordova.device",
     "org.apache.cordova.device-motion",
     "org.apache.cordova.device-orientation",
-    "org.apache.cordova.geolocation",
+	"cordova plugin add cordova-plugin-geolocation",
 	"https://github.com/apache/cordova-plugin-splashscreen.git",
     "https://github.com/chrisekelley/AppPreferences/"
 ];
