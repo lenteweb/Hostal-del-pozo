@@ -64,11 +64,11 @@ $( document ).on( "click", ".show-page-loading-msg", function() {
 		<h3>MENU</h3>
 
 		<ul>
-			<li><a href="index.html" rel="external"><img src="img/smico3.png">Inicio</a></li>
-			<li><a href="#another_page"><img src="img/smico2.png">Servicios</a></li>
-			<li><a href="habitaciones.html" rel="external"><img src="img/smico5.png">Habitaciones</a></li>
-			<li><a href="ubicacion.html" rel="external"><img src="img/smico6.png">Ubicación</a></li>
-			<li><a href="reservaciones.html" rel="external"><img src="img/smico4.png">Reservaciones</a></li>
+			<li><a href="index.html" rel="external"><img src="img/home-white.png">Inicio</a></li>
+			<li><a href="servicios.html" rel="external"><img src="img/info-white.png">Servicios</a></li>
+			<li><a href="habitaciones.html" rel="external"><img src="img/star-white.png">Habitaciones</a></li>
+			<li><a href="reservaciones.html" rel="external"><img src="img/calendar-white.png">Reservaciones</a></li>
+			<li><a href="https://goo.gl/maps/Uwwj2JG59DL2" rel="external"><img src="img/location-white.png">Como LLegar</a></li>
 		</ul>
 	</div>
 
@@ -83,38 +83,114 @@ $( document ).on( "click", ".show-page-loading-msg", function() {
 		</div>
 
 		<div data-role="content" data-theme="d">
-        <p><img src="themes/images/cosina.png" width="100%" height="" alt=""/></p>
         <h3>Nuestros Principales Servicios Son:</h3>
-        		
-		<div data-role="collapsible-set" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"  data-theme="d">
-		  <div data-role="collapsible" data-collapsed="false">
-		    <h3>Hospedaje</h3>
-		    <p>Habitaciones con T.V.<br>
-Habitaciones con baño y T.V.<br>
-Habitaciones Grupales<br>
-</p>
-	      </div>
-		  <div data-role="collapsible">
-		    <h3>Cocina</h3>
-		    <p>Cocina compartida para que te sientas como en casa, en donde podrás preparar comida sencilla.</p>
-	      </div>
-		  <div data-role="collapsible">
-		    <h3>Internet</h3>
-		    <p>Internet inalambrico de banda ancha con servicio de impresiones</p>
-	      </div>
-          <div data-role="collapsible">
-		    <h3>Lavandería</h3>
-		    <p>Servicio de Lavado y Secado</p>
-	      </div>
-          <div data-role="collapsible">
-		    <h3>Estancia con T.V.</h3>
-		    <p>Internet inalambrico de banda ancha con servicio de impresiones</p>
-	      </div>
-          </div>
-          <p align="center"><img src="themes/images/logo.jpg" width="100%" height="" alt=""/></p>
-  </div>
+        <p> En el Hotel Hostal del Pozo<br>
+        contamos con todos los servicios básicos<br>
+        que te permitirán sentirte como en casa.</p>
+        <p>Observa más detalles:</p>
 
-  </div>
-	
+<p><a href="#popup1" class="ui-btn ui-shadow ui-corner-all ui-icon-eye ui-btn-icon-left" data-rel="dialog" data-transition="pop">Hospedaje</a></p>
+<p><a href="#popup2" class="ui-btn ui-shadow ui-corner-all ui-icon-eye ui-btn-icon-left" data-rel="dialog" data-transition="pop">Cocina</a></p>
+<p><a href="#popup3" class="ui-btn ui-shadow ui-corner-all ui-icon-eye ui-btn-icon-left" data-rel="dialog" data-transition="pop">Internet</a></p>
+<p><a href="#popup4" class="ui-btn ui-shadow ui-corner-all ui-icon-eye ui-btn-icon-left" data-rel="dialog" data-transition="pop">Lavandería</a></p>
+<p><a href="#popup5" class="ui-btn ui-shadow ui-corner-all ui-icon-eye ui-btn-icon-left" data-rel="dialog" data-transition="pop">Estancia con T.V.</a></p>
+
+	<p align="center"><img src="themes/images/logo.jpg" width="250" height="100" alt="Hotel Hostal del Pozo"/></p>
+	</div>
+    </div>
+
+	<!-- Start of third page: #popup Hospedaje -->
+<div data-role="page" id="popup1">
+
+	<div data-role="header" data-theme="d">
+		<h1>Hospedaje</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" style="background-color:#DEF0FE">
+	<h2><img src="themes/images/habitaciones.jpg" width="100%" height="" alt=""/></h2>
+<div><p>Contamos con diferentes tipos de habitaciones:<br>
+Habitaciones con T.V. y baño afuera<br>
+Habitaciones con baño adentro y T.V.<br>
+Habitaciones Grupales<br></div>
+        <p align="center"><img src="themes/images/logo.jpg" width="250" height="100" alt="Hotel Hostal del Pozo"/></p>
+		<p align="center"><a href="#one" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left" data-theme="d">Volver a "Servicios"</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="d">
+		<h4>Hotel Hostal del Pozo</h4>
+	</div><!-- /footer -->
+</div>
+<!-- Start of third page: #popup Cocina -->
+<div data-role="page" id="popup2">
+
+	<div data-role="header" data-theme="d">
+		<h1>Cocina Compartida</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" style="background-color:#DEF0FE">
+	<h2><img src="themes/images/cosina.png" width="100%" height="" alt=""/></h2>
+<div><p>Cocina compartida para que te sientas como en casa, en donde podrás preparar comida sencilla.<br></div>
+        <p align="center"><img src="themes/images/logo.jpg" width="250" height="100" alt="Hotel Hostal del Pozo"/></p>
+		<p align="center"><a href="#one" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left" data-theme="d">Volver a "Servicios"</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="d">
+		<h4>Hotel Hostal del Pozo</h4>
+	</div><!-- /footer -->
+</div>
+<!-- Start of third page: #popup Internet -->
+<div data-role="page" id="popup3">
+
+	<div data-role="header" data-theme="d">
+		<h1>Internet</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" style="background-color:#DEF0FE">
+	<h2><img src="themes/images/internet.jpg" width="100%" height="" alt=""/></h2>
+<div><p>Internet inalambrico de banda ancha en todas las habitaciones, con servicio de impresiones en la administración.</p><br></div>
+        <p align="center"><img src="themes/images/logo.jpg" width="250" height="100" alt="Hotel Hostal del Pozo"/></p>
+		<p align="center"><a href="#one" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left" data-theme="d">Volver a "Servicios"</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="d">
+		<h4>Hotel Hostal del Pozo</h4>
+	</div><!-- /footer -->
+	</div>
+    <!-- Start of third page: #popup Lavanderia -->
+<div data-role="page" id="popup4">
+
+	<div data-role="header" data-theme="d">
+		<h1>Lavandería</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" style="background-color:#DEF0FE">
+	<h2><img src="themes/images/lavado.jpg" width="100%" height="" alt=""/></h2>
+<div><p>Servicio de Lavado y Secado</p></div>
+        <p align="center"><img src="themes/images/logo.jpg" width="250" height="100" alt="Hotel Hostal del Pozo"/></p>
+		<p align="center"><a href="#one" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left" data-theme="d">Volver a "Servicios"</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="d">
+		<h4>Hotel Hostal del Pozo</h4>
+	</div><!-- /footer -->
+</div>
+<!-- Start of third page: #popup Estancia con TV -->
+<div data-role="page" id="popup5">
+
+	<div data-role="header" data-theme="d">
+		<h1>Estancia con T.V.</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" style="background-color:#DEF0FE">
+	<h2><img src="themes/images/sala-tv.jpg" width="100%" height="" alt=""/></h2>
+<div><p>Donde podrás disfrutar del ambiente cálido disfrutando de tu canal favorito que permite una convivencia sana con los huéspedes.</p></div>
+        <p align="center"><img src="themes/images/logo.jpg" width="250" height="100" alt="Hotel Hostal del Pozo"/></p>
+		<p align="center"><a href="#one" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left" data-theme="d">Volver a "Servicios"</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="d">
+		<h4>Hotel Hostal del Pozo</h4>
+	</div><!-- /footer -->
+</div>	
 </body>
 </html>

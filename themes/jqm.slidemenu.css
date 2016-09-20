@@ -4,7 +4,7 @@
 	left: 0px;
 	width: 0px;
 	height: 100%;
-	background-color: #262C3A;
+	background-color: #0000E0;
 	-webkit-box-shadow: 3px 0px 5px -2px #32394A;
 	box-shadow: 3px 0px 5px -2px #32394A;
 	z-index: 2147483647;
@@ -14,14 +14,14 @@
 }
 
 .slidemenu h3{
-	font-size:12px;
+	font-size:14px;
 	font-family: Arial, Helvetica, sans-serif;
-	color:#8C919F;
+	color:#FFFFFF;
 	text-shadow: 0 1px 0 #272D39;
 	margin:0;
 	padding:4px 0 4px 10px;
 	background: rgb(67,74,94); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(67,74,94,1) 0%, rgba(57,64,82,1) 100%); /* FF3.6+ */
+	background: -moz-linear-gradient(top, rgb(83, 111, 191) 0%, rgb(110, 52, 162) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(67,74,94,1)), color-stop(100%,rgba(57,64,82,1))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, rgba(67,74,94,1) 0%,rgba(57,64,82,1) 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, rgba(67,74,94,1) 0%,rgba(57,64,82,1) 100%); /* Opera 11.10+ */
@@ -45,7 +45,7 @@
 .slidemenu ul li a:link, .slidemenu ul li a:visited {
 	border-top: 1px #3E4555 solid;
 	border-bottom: 1px #191D27 solid;
-	color: #DBE0E8;
+	color: #ffffff;
 	font-size: 14px;
 	font-family: Arial, Helvetica, sans-serif;
 	text-decoration: none;
@@ -95,8 +95,8 @@
 /* THESE ARE JUST EXAMPLE STYLES BELOW */
 
 #profile {
-	background-color:#32394A;
-	border-bottom: 1px solid #242A37;
+	background-color:#552C7A;
+	border-bottom: 2px solid #242A37;
 	overflow: hidden;
 	height: 58px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -105,7 +105,7 @@
 .profile_info {
 	position: relative;
 	left: 68px;
-	top:-49px;
+	top:-40px;
 	font-size: 14px;
 	color: #C4CCDA;
 	text-shadow: 0 0px 0 black;

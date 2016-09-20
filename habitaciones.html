@@ -53,6 +53,59 @@ $( document ).on( "click", ".show-page-loading-msg", function() {
     $.mobile.loading( "hide" );
 });
 </script>   
+<script>
+imagenes = new Array();
+//Agrega tantas imágenes como necesites en el array
+imagenes[0] = "themes/images/slide/slide1.png";
+imagenes[1] = "themes/images/slide/slide2.jpg";
+imagenes[2] = "themes/images/slide/slide3.jpg";
+imagenes[3] = "themes/images/slide/slide4.jpg";
+siguiente = 0;
+
+function CambiaImagen()
+{
+dimensiones = $("#box-imagen").width();
+$("#box-imagen img").css({left: -dimensiones+"px"}).attr("src", imagenes[siguiente]);
+$("#box-imagen img").animate({left: "+="+dimensiones});
+$("#box-imagen a").attr("href", imagenes[siguiente]);
+
+siguiente = siguiente+1;
+if (siguiente >= imagenes.length)
+{
+siguiente = 0;
+}
+//Aquí puedes colocar el tiempo para cada transición de imagen
+transicion = 2000;
+setTimeout("CambiaImagen()", transicion);
+}
+
+$(function(){
+CambiaImagen();
+});
+</script>
+<style>
+
+#box
+{
+width: 100%;
+background: black;
+padding: 0px;
+border-radius: 4px;
+}
+
+#box-imagen{
+width: 100%;
+background: black;
+overflow: hidden;
+}
+
+#box-imagen img
+{
+position: relative;
+width: 100%;
+
+}
+</style>
 </head>
 <body>
 
@@ -66,15 +119,15 @@ $( document ).on( "click", ".show-page-loading-msg", function() {
 		<h3>MENU</h3>
 
 		<ul>
-			<li><a href="index.html" rel="external"><img src="img/smico3.png">Inicio</a></li>
-			<li><a href="servicios.html" rel="external"><img src="img/smico2.png">Servicios</a></li>
-			<li><a href="#another_page2"><img src="img/smico5.png">Habitaciones</a></li>
-		<li><a href="ubicacion.html" rel="external"><img src="img/smico6.png">Ubicación</a></li>
-			<li><a href="reservaciones.html" rel="external"><img src="img/smico4.png">Reservaciones</a></li>
+			<li><a href="index.html" rel="external"><img src="img/home-white.png">Inicio</a></li>
+			<li><a href="servicios.html" rel="external"><img src="img/info-white.png">Servicios</a></li>
+			<li><a href="habitaciones.html" rel="external"><img src="img/star-white.png">Habitaciones</a></li>
+			<li><a href="reservaciones.html" rel="external"><img src="img/calendar-white.png">Reservaciones</a></li>
+			<li><a href="https://goo.gl/maps/Uwwj2JG59DL2" rel="external"><img src="img/location-white.png">Como LLegar</a></li>
 		</ul>
 	</div>
 
-	<div data-role="page" id="another_page2" data-theme="a">
+	<div data-role="page" id="another_page2" data-theme="d">
 
 		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false">
 			<a href="#" data-slidemenu="#slidemenu" data-slideopen="false" data-icon="smico" data-corners="false" data-iconpos="notext">Menu</a>
@@ -82,36 +135,39 @@ $( document ).on( "click", ".show-page-loading-msg", function() {
 		</div>
 
 		<div data-role="content">
-        <p><img src="themes/images/habitaciones.png" width="100%" height="" alt=""/></p>
-		
+        <div id="box">
+<div id="box-imagen">
+<img src="themes/images/slide/slide1.png">
+</div>
+</div>		
 			<h2>Servicio de Hotel</h2>
 			<p>Habitación con baño y T.V</p>
 <ul>
-<li>Cuarto Doble   $ 400.00 mx</li>
+<li>Cuarto Doble .. $ 400.00 mx</li>
 <li>3 Personas …. $ 600.00 mx</li>
-<li>4 Personas …. $ 800.00 m</li>
+<li>4 Personas …. $ 800.00 mx</li>
 </ul>
 			<p>Habitación con T.V y baño a un lado</p>
 <ul>
-<li>Cuarto Doble   $ 300.00 mx</li>
+<li>Cuarto Doble .. $ 300.00 mx</li>
 <li>3 Personas …. $ 450.00 mx</li>
-<li>4 Personas …. $ 600.00 m</li>
+<li>4 Personas …. $ 600.00 mx</li>
 <li>5 Personas …. $ 450.00 mx</li>
-<li>6 Personas …. $ 600.00 m</li>
+<li>6 Personas …. $ 600.00 mx</li>
 </ul>
 <p>Grupos costo por persona … $ 150.00 mx</p>
 <p>Precios por mes</p>
 
-<p>1 Persona … $ 3,000.00 mx<br>
+<p>1 Persona ….. $ 3,000.00 mx<br>
 2 Personas … $ 5,000.00 mx<<p>
 <p>*Bienvenidas las Mascotas *</p>
 
 <p>Mascotas pagan $ 100.00 mx</p>
 
-<p>Precios especiales para empresa por grupo sujeto a cotizacion.</p>
+<p align="justify">Precios especiales para empresa por grupo sujeto a cotizacion.</p>
 
-<p>Precios Expresados en Pesos Mexicanos incluyen Impuestos</p>
-<p align="center"><img src="themes/images/logo.jpg" width="100%" height="" alt=""/></p>
+<p align="justify">Precios Expresados en Pesos Mexicanos incluyen Impuestos</p>
+<p align="center"><img src="themes/images/logo.jpg" width="250" height="100" alt="Hotel Hostal del Pozo"/></p>
 		</div>
 
 	</div>
