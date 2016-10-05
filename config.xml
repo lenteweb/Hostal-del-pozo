@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widget xmlns = "http://wwww.w3.org/ns/widgets"
-id = "com.hostaldelpozo" 
-android:versionCode="15"
-version = "1.0.1">
+id = "com.hostaldelpozo" version = "1.0.1">
 
 <name>Hotel Hostal del Pozo</name>
 
